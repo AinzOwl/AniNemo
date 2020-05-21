@@ -1,4 +1,9 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.2/plyr.js" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.2/plyr.css" />
 
-    <link rel="stylesheet" href="demo.css">
-
-<paper-audio-player src="https://listen.moe/stream" title="Pink Shades - O+PNR" color="#F05C38"></paper-audio-player>
+<audio id="player" controls>
+  <source src="https://listen.moe/stream" type="audio/mp3" />
+</audio>
+<script>
+  const player = new Plyr('#player');
+</script>
